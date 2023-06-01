@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+      background-color: #f8f8f8;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    } 
+    </style>
+</head>
+<body>
+    <header>
+
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Zařízení běžně integrovaná do základní desky</a></li>
+                <li><a href="form-factor.html">Velikost základní desky a její uspořádání</a></li>
+                <li><a href="motherboard-design.html">Design záklandí desky</a></li>
+                <li><a href="expanding-slots.html">Rozšiřující sloty základní desky</a></li>
+                <li><a href="motherboard-temperature.html">Teplota a spolehlivost</a></li>
+                <li><a href="sources.html">Zdroje</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1>Zařízení bežně integrovaná do základní desky</h1>
+        <p>Základní desky slouží jako centrální komponenta počítače a integrují několik dalších zařízení. Mezi běžně integrované součásti základní desky patří:</p>
+        <h1 class="motherboard-headline">Zvuková karta</h1>
+        <p>Zvuková karta je rozšiřující karta počítače pro vstup a výstup zvukového signálu, ovládaná softwarově.
+
+            Typická zvuková karta obsahuje zvukový čip, který provádí digitálně-analogový převod nahraného nebo vygenerovaného digitálního záznamu. Tento signál je přiveden na výstup zvukové karty (většinou 3,5mm jack-sluchátkový).
+            
+            Zvuková karta také má „line in“ konektor, do kterého je možné připojit kazetový přehrávač nebo podobný zdroj zvukového signálu. Zvuková karta tento signál digitalizuje a uloží (pomocí příslušného počítačového programu) na úložiště dat. Digitalizace se provádí pomocí vzorkování. V každém časovém intervalu se zjistí a zaznamená aktuální stav signálu neboli vzorek. Čím kratší je interval mezi vzorkováním, tím vyšší je vzorkovací frekvence, tím více vzorků bude pořízeno a tím bude výsledný záznam kvalitnější. Druhý faktor, který určuje kvalitu digitálního signálu, je počet použitých úrovní v každém ze vzorků. Nejčastěji používané vzorkovací frekvence: 11,025 kHz (telefonní kvalita), 22,05 kHz (rádio kvalita), 44,1 kHz (CD kvalita), 48,0 kHz, 96,0 kHz. Počet bitů na jeden vzorek je většinou 8, 16 nebo 24.
+            
+            Třetí konektor, který většina zvukových karet má, se používá k přímému připojení mikrofonu. Signál z něj je možné také nahrávat na úložiště dat nebo ho jinak zpracovat (např. software na rozpoznávání hlasu nebo VoIP).
+            
+            Většina zvukových karet má také MIDI a GamePort konektor. Konektor MIDI slouží k připojení např. elektronického klávesového nástroje nebo jiného zdroje digitálního MIDI signálu. Pokud nahráváme z MIDI, tak nemusíme provádět vzorkování. Do počítače se uloží informace o tom, který nástroj hraje, výška tónu, délka tónu, dynamika úhozu na klávesu, atd. Rozhraní GamePort slouží k připojení joysticku nebo jiného herního zařízení.
+            
+            Starší zvukové karty také měly IDE rozhraní. To sloužilo k připojení CD-ROM mechaniky, ale v dnešní době již nemá opodstatnění, protože moderní počítače jsou vybaveny EIDE, SATA nebo SCSI rozhraním, které umožňuje připojit více zařízení. Pokud je v počítači zvuková karta i CD-ROM mechanika, mohou se propojit pomocí tzv. audio kabelu, ten je však v dnešní době již zbytečný, jelikož většina zvukových přehrávačů se obejde bez něj. Toto spojení umožňuje přenášet analogový nebo digitální zvukový signál z CD-ROM mechaniky do zvukové karty a tak je možné poslouchat hudební CD ze stejných reproduktorů jako zvuk z počítače.</p>
+            <img class="sound-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Sound_Blaster_Live%21_5.1.jpg/220px-Sound_Blaster_Live%21_5.1.jpg" alt="">
+        <h1 class="motherboard-headline">Grafická karta</h1>
+        <p>Grafická karta je v informatice součást počítače, jejímž úkolem je vytvářet grafický výstup na monitoru. Hlavní součástí grafické karty je grafický procesor (GPU), který slouží pro rychlé a efektivní změny obsahu grafické paměti (viz framebuffer) a tím i změny obrazu viditelného na monitoru. Grafická karta může být integrovaná (tj. používá operační paměť počítače, je výrobci prezentována jako levnější) nebo dedikovaná (má vlastní videopaměť a je typicky inzerována jako výkonnější), přičemž nezáleží na tom, zda je grafická karta na vlastní samostatné desce (a vložena do slotu sběrnice). Specifický případ je pak integrace do mikroprocesoru (tzv. APU).</p>
+        <img class="graphics-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2014_MSI_GTX_770_Lightning.jpg/220px-2014_MSI_GTX_770_Lightning.jpg" alt="">
+        <h1 class="motherboard-headline">Sitová karta</h1>
+        <p>Síťová karta (anglicky Network Interface Controller, zkratka NIC) je v informatice zařízení pro propojení počítačů v počítačové síti. Ve stolních počítačích má podobu karty, která se zasune do slotu (sběrnice PCI-e) základní desky nebo (což je dnes daleko častější varianta) je na základní desce integrovaná. U notebooků je situace podobná, integrace převládá a pro externí připojení se používá rozhraní USB.
+
+            Síťové rozhraní je v počítači (resp. v operačním systému) síťová karta, Wi-Fi rozhraní nebo virtuální rozhraní, které přijímá a vysílá v počítačové síti data (např. ethernetové rámce). Za síťové rozhraní nepovažujeme síťové porty opakovače (repeater), hubu, switche a bridge (mosty), které není v síti možno adresovat (poslat konkrétně jemu nějaká data).</p>
+        <img class="signal-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NIC-FA312.jpg/220px-NIC-FA312.jpg" alt="">
+        <h1 class="motherboard-headline">Super I/O Chip</h1>
+        <p>Super I/O je skupina komunikačních zařízení (I/O kontrolerů), která se začala používat na základních deskách osobních počítačů na konci osmdesátých let. Původně se jednalo o přídavné karty, které byly postupně integrovány na základní desku.
+
+            Super I/O čip v sobě kombinuje rozhraní pro různá zařízení s nízkou přenosovou rychlostí.
+            
+            Obvykle obsluhuje komunikaci s těmito periferiemi:
+            
+            Obsluha disketové mechaniky
+            Paralelní port (obvykle pro připojení tiskárny)
+            Jeden nebo více sériových portů
+            Obsluha klávesnice a myši na portu PS/2
+            teplotní čidla a snímání rychlosti ventilátorů
+            Super I/O chip může obsluhovat i rozhraní pro další zařízení jako je gameport nebo infra port. V některých čipech je také zabudována kontrola otevření skříně počítače. Obsluhou mnoha zařízení v jednom čipu je redukován počet součástek osazených na základní desce a tím je zlevňována výroba základní desky.
+            
+            Původní super I/O čipy používaly komunikaci přímo s CPU pomocí ISA sběrnice. S tím, jak se v PC začala místo ISA sběrnice používat sběrnice PCI, se ze super I/O čipů stával jediný důvod používání ISA sběrnice na základní desce.
+            
+            Moderní super I/O používají pro komunikaci s CPU tzv. LPC sběrnici místo ISA. LPC sběrnice je běžně připojena na jižní můstek základní desky.
+            
+            Existuje mnoho společností, které vyrábějí tyto super I/O čipy, například Nuvoton, ITE, Fintek, and SMSC. National Semiconductor vyráběl super I/O do roku 2005, kdy tuto část výroby prodal firmě Winbond.</p>
+        <img class="super-chip-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ITE_IT8712F-A_and_TI_98A3XRK_20100419.jpg/235px-ITE_IT8712F-A_and_TI_98A3XRK_20100419.jpg" alt="">
+        <h1 class="motherboard-headline">Řadiče pevných disků</h1>
+        <p>Řadiče pevných disků jsou zařízení nebo součásti počítače, které se používají k řízení a správě pevných disků. Existují různé typy řadičů, včetně ATA, SCSI, RAID a NVMe. Tyto řadiče zajišťují komunikaci mezi počítačem a pevnými disky a umožňují provádění operací jako čtení, zápis a formátování dat. RAID řadiče umožňují vytvářet a spravovat disková pole složená z více pevných disků pro zvýšení výkonu, kapacity nebo odolnosti proti výpadkům.</p>
+        <img class="hard-disk-sorter-img" src="https://it.cz/storage/images/220x220/1415537.jpg/pces-sa4m2.jpg" alt="">
+    </div>
+    <div class="div-footer">
+        <div class="div-footer-content1">
+            <span>Zdroje</span>
+            <ul>
+                <li>Pan Esch</li>
+                <li>Wikipedia</li>
+                <li>Alza</li>
+                <li>CZC</li>
+            </ul>
+        </div>
+        <div class="div-footer-content2">
+            <span>Podpořte nás</span>
+            <ul>
+                <li>Paypal</li>
+                <li>Komentář</li>
+                <li onclick="alert('Toto se stále připravuje')" style="cursor: pointer;">Hodnocení</li>
+            </ul>
+        </div>
+        <div class="div-footer-content3">
+            <span>Pomoc</span>
+            <ul>
+                <li>Email</li>
+                <li>Sms</li>
+                <li>Youtube komentáře</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

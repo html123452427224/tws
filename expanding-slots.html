@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+      background-color: #f8f8f8;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+</style>
+<body>
+    <header>
+       
+
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Zařízení běžně integrovaná do základní desky</a></li>
+                <li><a href="form-factor.html">Velikost základní desky a její uspořádání</a></li>
+                <li><a href="motherboard-design.html">Design záklandí desky</a></li>
+                <li><a href="expanding-slots.html">Rozšiřující sloty základní desky</a></li>
+                <li><a href="motherboard-temperature.html">Teplota a spolehlivost</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 class="motherboard-headline">Rozšiřující sloty základní desky</h1>
+       <p> Rozšiřující sloty umožňují připojit k počítači další zařízení. Postupem času se vyvinul velký počet druhů. Odlišují se zejména přenosovými rychlostmi a schopnostmi napájet připojená zařízení.
+
+ISA – Dnes již nepoužívané. Dřív se používala pro připojení třeba grafických karet (v té době 2D akcelerátorů), zvukových karet a dalších.
+EISA – Dnes již nepoužívané. Rozšíření ISA slotu.
+VESA – Dnes již nepoužívané. Určeno pro grafické karty.
+PCI – Dříve běžně používaný slot pro všechny rozšiřující karty, později už nestačil požadavkům grafických karet. V současnosti je nahrazen PCI Express slotem.
+AGP – Slot navržen speciálně pro grafické karty. Je výrazně rychlejší než PCI, v roce 2009 již začal zaostávat (Socket A, Socket 478…). Stejně jako PCI sloty byl nahrazen sloty PCI Express.
+PCI-Express – Nástupce PCI a AGP. Funguje jako univerzální sběrnice pro připojení jakéhokoliv standardního typu přídavných karet (grafické, zvukové, síťové, střihové a další karty). Dosahuje mnohem vyšších přenosových rychlostí než předchůdci. Zařízení určená pro PCI Express nejsou zpětně kompatibilní s žádným předchozím slotem (AGP, PCI, …). Existuje několik variant od sebe se lišící délkou a rychlostí přenosu.</p>
+      <h1 class="motherboard-headline">ISA</h1>
+      <p>ISA je v informatice název pro sběrnici, která byla používána zejména pro IBM PC kompatibilní počítače (podle IBM PC) s 8bitovým mikroprocesorem Intel 8088, později i pro 16bitové počítače typu PC/AT s procesorem Intel 80286. ISA byla přímým předchůdcem sběrnice 32bitové sběrnice EISA (Extended Industry Standard Architecture). Byla nahrazena sběrnicemi IBM Micro Channel, VESA Local Bus, sběrnicí PCI a dalšími.</p>
+      <img class="isa-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Isa1.jpg/200px-Isa1.jpg" alt="">
+      <h1 class="motherboard-headline">EISA</h1>
+      <p>EISA je v informatice označení pro 32bitovou paralelní sběrnici používanou v počítačích třídy IBM PC/AT od roku 1988. EISA je rozšířením původní 16bitové sběrnice ISA, se kterou je zpětně kompatibilní (ISA karty lze zasunout a používat v EISA slotu).
+
+        V úplně původním IBM PC byl použit procesor 8088, což je 16bitový procesor s 8bitovým rozhraním. Proto byla pro rozšiřující karty přímo vyvedena jeho sběrnice na konektory SA (standard architecture).
+        
+        Sběrnice ISA (navržená pro počítač třídy IBM PA/AT s procesorem Intel 80286) představuje rozšíření původní SA sběrnice. Má 16 datových, 24 adresových plus sadu řídících signálů umístěných na lineárním oboustranném konektoru (protikusem je běžná oboustranná deska plošných spojů s vytvořenými kontaktními poli. ISA pracuje rychlostí taktu 8 MHz.
+        
+        Sběrnice EISA představuje snahu o sdola kompatibilní rozšíření této sběrnice na 32 datových a 32 adresních bitů současně s použitím vyšší přenosové rychlosti. Fyzicky jde o přidání druhého konektoru (obdobné konstrukce) do řady za ISA konektor. Tento druhý konektor obsahuje všechny signály (tedy ne pouze doplnění chybějících). Základní rychlost taktu sběrnice EISA je 8,3 MHz. Do výsledné pozice (tzv. slotu) lze vložit jak ISA rozšiřující desku, tak EISA 32bitovou desku.
+        
+        
+        Konektor PISA
+        Tato sběrnice dosáhla pouze omezeného rozšíření (může potvrdit kdokoliv, kdo má zkušenosti s výpočetní technikou 90. let 20. století). Problematické bylo mechanické provedení s dlouhým kontaktním polem. Je zajímavé, že stejný konektor byl použit pro bus PISA, což je kombinace ISA a PCI na jednom konektoru. Používal se na tzv. "stromečky" na kterých byly jak ISA, tak PCI konektory, tudíž na základní desce byl tento obojetný konektor, aby se na nej vešly oba busy. Stromečky jsou adaptery, nástavce, prodlužovačky na bus, aby přídavné karty mohly být montovány rovnoběžně se základní deskou. Používají se v kompaktních počítačích, aby mohly být nižší.
+        
+        Desky EISA podporoval pouze omezený počet výrobců, převážně asijské provenience (sdružených v EISA foru). Firma IBM navrhla konkurenční 32bitovou sběrnici Micro Channel, ovšem nákladnost licenčních poplatků a její komplikovanost zabránily většímu rozšíření. Nakonec se ujalo řešení firmy Intel – 32bitová sběrnice PCI.</p>
+        <img class="eisa-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/EISA_Bus.jpg/220px-EISA_Bus.jpg" alt="">
+      <h1 class="motherboard-headline">VESA</h1>
+      <p>VESA je zkratka pro Video Electronics Standards Association. Jedná se o konsorcium výrobců a vývojářů grafických karet a zobrazovacích zařízení (monitorů) - zabývající se standardizací rozhraní a video protokolů.
+
+        Když operační systémy podporují tzv. VESA mód, nepotřebují mít ovladač pro každý monitor zvlášť i přes rozdílná rozlišení, ale při připojení monitoru si automaticky zjistí jeho rozlišení a zobrazení grafiky se mu přizpůsobí. Operační systémy s podporou VESA módu jsou schopné pracovat s monitorem který je kompatibilní s podporovanou grafickou kartou bez nutnosti vlastnit jeho ovladač pro rozlišení. VESA mód se nevztahuje na počet zobrazovaných barev. První operační systém s podporou VESA módu bez nutnosti jakékoli instalace (instalace operačního systému či ovladačů) byl Linux Slax.</p>
+        <img class="vesa-img" src="https://th.bing.com/th/id/OIP.Ug5IYPTRz5ci19-XnZWBRQAAAA?w=217&h=187&c=7&r=0&o=5&pid=1.7" alt="">
+        <h1 class="motherboard-headline">PCI</h1>
+        <p>PCI (z anglického Peripheral Component Interconnect) nebo PCI Standard (v praxi se však téměř vždy zkracuje na PCI) je počítačová sběrnice pro připojení periferií k základní desce, která není omezená na platformu osobních počítačů PC. Používá paralelní přenos dat (šířka 32 nebo 64 bitů) a je orientovaná na přenos zpráv místo přímé komunikace (anglicky message passing). Od zbytku systému je oddělena pomocí PCI mostů, které zprostředkovávají komunikaci s připojenými kartami. V jednom počítači může být jedna nebo i více na sobě nezávislých PCI sběrnic. Jejím prostřednictvím lze připojit periférie spadající do dvou kategorií:
+
+            integrovaný obvod zabudovaný přímo do základní desky – označuje se jako planární zařízení
+            rozšiřující karta, která se vsune do konektoru (slotu) sběrnice
+            Sběrnice PCI byla běžná v osobních počítačích, kde jako standardní rozšiřující sběrnice nahradila sběrnici ISA a VESA Local Bus, ale objevovala se také v mnoha jiných typech počítačů. Nízká propustnost PCI sběrnice vedla k vytvoření specializovaného portu AGP určeného pro grafické karty, který je rychlejší než PCI sběrnice a zároveň přinesl další vylepšení. PCI a AGP byly dlouhou dobu součástí většiny vyráběných základních desek pro PC. V současné době jsou PCI i AGP nahrazeny sběrnicí PCI Express, která používá sériový přenos. Specifikace PCI se zabývá fyzickými rozměry sběrnice (včetně rozestupu vodičů), elektrickými charakteristikami, časováním sběrnice a protokoly. Tyto specifikace lze zakoupit od konzorcia PCI Special Interest Group (PCISIG).</p>
+        <img class="pci-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Pci-slots.jpg/200px-Pci-slots.jpg" alt="">
+        <h1 class="motherboard-headline">AGP</h1>
+        <p>AGP (zkratka pro Accelerated Graphics Port nebo též Advanced Graphics Port) je v informačních technologiích speciální patice pro připojení grafické karty. Nejedná se v pravém slova smyslu o sběrnici, protože do AGP lze připojit pouze jedno zařízení.</p>
+        <img class="agp-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/AGP_slot.jpg/220px-AGP_slot.jpg" alt="">
+        <h1 class="motherboard-headline">PCI-Express</h1>
+        <p>PCI-Express (též PCIe, PCI-E nebo 3GIO = 3rd Generation I/O) je v informatice standard systémové sběrnice, který byl vytvořen jako náhrada za starší standardy PCI, PCI-X a AGP. Označení sběrnice není zcela správné, protože se jedná o dvoubodové spoje, na kterých jsou data přenášena bez potřeby adresy (adresace zařízení). Sběrnice PCI-Express používá sériový přenos dat (na rozdíl od svých předchůdců), protože to přináší proti paralelnímu přenosu některé výhody, zejména možnost dále zvyšovat frekvenci, na které sběrnice pracuje (a tím i přenosovou rychlost), protože u paralelní komunikace začalo při vysokých frekvencích docházet k nežádoucímu vzájemnému ovlivňování vodičů a vyvstaly problémy se synchronizací (anglicky clock skew).</p>
+        <img class="pci-express-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/PCI-E_%26_PCI_slots_on_DFI_LanParty_nF4_SLI-DR_20050531.jpg/200px-PCI-E_%26_PCI_slots_on_DFI_LanParty_nF4_SLI-DR_20050531.jpg" alt="">
+    </div>
+    <div class="div-footer">
+        <div class="div-footer-content1">
+            <span>Zdroje</span>
+            <ul>
+                <li>Pan Esch</li>
+                <li>Wikipedia</li>
+                <li>Alza</li>
+                <li>CZC</li>
+            </ul>
+        </div>
+        <div class="div-footer-content2">
+            <span>Podpořte nás</span>
+            <ul>
+                <li>Paypal</li>
+                <li>Komentář</li>
+                <li onclick="alert('Toto se stále připravuje')" style="cursor: pointer;">Hodnocení</li>
+            </ul>
+        </div>
+        <div class="div-footer-content3">
+            <span>Pomoc</span>
+            <ul>
+                <li>Email</li>
+                <li>Sms</li>
+                <li>Youtube komentáře</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

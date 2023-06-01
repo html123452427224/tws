@@ -1,0 +1,522 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 1000px;
+}
+
+header {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0px 7%;
+}
+
+header .page-name {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:990px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial !important;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+   
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    .div-foooter {
+        flex-direction: column;
+    }
+
+    .div-footer .div-footer-content1 {
+        display: block;
+    }
+    .cpu-img {
+        width: 100%;
+    }
+    .pci-express-img {
+        width: 100%;
+    }
+    .main-container .motherboard-southbridge-img {
+      width: 100%;
+    }
+    
+    .main-container .motherboard-cooler-img {
+        width: 100%;
+    }
+    
+    .main-container .isa-img {
+        width: 100%;
+    }
+    
+    .main-container .eisa-img {
+        width: 100%;
+    }
+    
+    .main-container .vesa-img {
+        width: 100%;
+    }
+    
+    .main-container .pci-img {
+        width: 100%;
+    }
+    
+    .main-container .agp-img {
+        width: 100%;
+    }
+    
+    .main-container .pci-express-img {
+        width: 100%;
+    }
+    
+    .main-container .cpu-img {
+        width: 100%;
+    }
+}
+
+.div-footer {
+   position: relative;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 200px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   flex-direction: row;
+}
+
+.div-footer .div-footer-content1 ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.div-footer .div-footer-content2 ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.div-footer .div-footer-content3 ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.div-footer .div-footer-content1 ul li {
+    margin: 5px;
+}
+
+.div-footer .div-footer-content2 ul li {
+    margin: 5px;
+}
+
+.div-footer .div-footer-content3 ul li {
+    margin: 5px;
+}
+
+.main-container {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    height: auto;
+    margin-bottom: 200px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.main-container .main-container-content1 {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    height: 250px;
+    width: 75%;
+    background-image: url("https://th.bing.com/th/id/R.3ec319bbe2f66440b31bb1cda0bfb490?rik=5SabMxZYZ%2bLvjQ&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container h4 {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 25px;
+    width: 50%;
+}
+
+.main-container h6 {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 10px;
+}
+
+.main-container .main-container-content2 {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+    height: 250px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Motherboards_form_factors.svg/700px-Motherboards_form_factors.svg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container .main-container-content3 {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+    height: 250px;
+    background-image: url("https://th.bing.com/th?id=OIP.zdV5NCimRq7OCz-1LxNLWwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container .main-container-content4 {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+    height: 250px;
+    background-image: url("https://th.bing.com/th?id=OIP.qXpuCbWqDxuwj5Runs2bjgHaFW&w=294&h=212&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container .main-container-content5 {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+    height: 250px;
+    background-image: url("https://th.bing.com/th/id/R.f1dcc109c174555de7f12df095e6ff6d?rik=LGm2iR67uB%2b4fQ&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container .motherboard-quiz {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 250px;
+    background-image: url("https://th.bing.com/th/id/R.6d956e7b5854a8ac9c5c8f9b5a2ae8ca?rik=%2fXDErRI5I1kpRw&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f90000%2fvelka%2fquestion-marks-background.jpg&ehk=jEtJVMLDSb69IBGd50aK%2fiKGdi9oleJGvqLRxSzReAc%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+
+.motherboard-quiz button {
+    position: relative;
+    bottom: -150px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    outline: none;
+    float: left;
+}
+
+.motherboard-quiz span {
+    font-size: 20px;
+}
+
+.motherboard-quiz .quiz-span {
+    display: block;
+    position: relative;
+    bottom: -140px;
+}
+
+.motherboard-quiz button a {
+    text-decoration: none;
+}
+
+.main-container h6 a {
+    color: #333;
+}
+
+.main-container .introduction {
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.quiz-button {
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    width: 50%;
+    height: 30px;
+    outline: none;
+    margin-top: 20px;
+}
+table {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.main-container p {
+    display: inline;
+}
+
+.main-container .atx-format {
+    margin-top: 30px;
+    display: block;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.main-container .microATX-format {
+    margin-left: 25%;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    width: 50%;
+    height: 250px;
+}
+
+.main-container .E-ATX-format {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    width: 50%;
+    height: 250px;
+}
+
+.main-container .MINI-ITX-format {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 250px;
+}
+
+.main-container .motherboard-headline {
+    margin-top: 30px;
+}
+
+.main-container .sound-card-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.main-container .signal-card-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.main-container .graphics-card-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.main-container .super-chip-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.main-container .hard-disk-sorter-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.div-footer .div-footer-content1 span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-footer .div-footer-content2 span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 146px;
+}
+
+.div-footer .div-footer-content3 span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 146px;
+}
+
+.div-footer .div-footer-content1 ul li {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-footer .div-footer-content2 ul li {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-footer .div-footer-content3 ul li {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container .motherboard-southbridge-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .motherboard-cooler-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .isa-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .eisa-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .vesa-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .pci-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .agp-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .pci-express-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-container .cpu-img {
+    display: block;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+}

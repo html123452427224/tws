@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Základní deska</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+      background-color: #f8f8f8;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #666;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+ 
+
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Zařízení běžně integrovaná do základní desky</a></li>
+        <li><a href="form-factor.html">Velikost základní desky a její uspořádání</a></li>
+        <li><a href="motherboard-design.html">Design záklandí desky</a></li>
+        <li><a href="expanding-slots.html">Rozšiřující sloty základní desky</a></li>
+        <li><a href="motherboard-temperature.html">Teplota a spolehlivost</a></li>
+    </ul>
+    </nav>
+</header>
+    <div class="main-container">
+  <h1 class="motherboard-headline">Základní deska</h1>
+  <p>Základní deska nabízí elektrické přípojky, kterými komunikuje s ostatními komponenty systému. Typický stolní počítač obsahuje mikroprocesor, hlavní paměť a další důležité komponenty připojené k základní desce. Další komponenty, jako jsou úložiště, moduly pro zobrazení videa a zvuku, a periferní zařízení mohou být připojeny k základní desce jako zásuvné karty nebo pomocí kabelů. U moderních počítačů je stále běžnější začlenit některé z těchto periferií do desky samotné. Důležitou součástí základní desky je čipová sada podporující mikroprocesory, které poskytují podporu rozhraní mezi CPU s různými sběrnicemi a externími komponenty. Tato čipová sada určuje do jisté míry vlastnosti a schopnosti základní desky. Do moderních základních desek patří:</p>
+  <ul>
+    <li>Patice (u některých starších desek sloty), do které se vkládá CPU</li>
+    <li>Non-volatile paměťové čipy (bývají obvykle vkládány do moderních základních desek ve Flash ROM) – obsahující firmware nebo BIOS systému.</li>
+    <li>Paměťové sloty, do kterých má být nainstalována hlavní paměť systému, obvykle ve formě modulů DIMM obsahujících čipy DRAM, mohou být DDR3, DDR4, DDR5 nebo integrovaný LPDDRx.</li>
+    <li>Čipová sada, která tvoří rozhraní mezi CPU, hlavní pamětí a periferními sběrnicemi</li>
+    <li>Energeticky nezávislé paměťové čipy (obvykle Flash ROM v moderních základních deskách) obsahující firmware systému nebo BIOS</li>
+    <li>Generátor hodin, který produkuje systémový hodinový signál pro synchronizaci různých komponentů</li>
+    <li>Sloty pro rozšiřující karty (rozhraní k systému přes sběrnice podporované čipovou sadou)</li>
+    <li>Napájecí konektory, které přijímají elektrickou energii z napájecího zdroje počítače a distribuují ji do CPU, čipové sady, hlavní paměti a rozšiřujících karet. Od roku 2007 vyžadují některé grafické karty (např. GeForce 8 a Radeon R600) více energie, než může poskytnout základní deska, a proto byly zavedeny vyhrazené konektory pro jejich přímé připojení k napájecímu zdroji.</li>
+    <li>Konektory pro pevné disky, optické diskové jednotky nebo jednotky SSD, nyní obvykle SATA a NVMe</li>
+  </ul>
+  <h1 class="motherboard-headline">CPU</h1>
+  <p>CPU (centrální procesorová jednotka) zásuvka nebo slot je elektrická součástka, která se váže k desce plošnými spoji. Jedná se o speciální typ integrovaného obvodu zásuvky určené pro velmi vysoký počet kontaktů. Socket CPU poskytuje mnoho funkcí, včetně fyzické struktury na podporu procesoru, podpory pro chladič. Nejdůležitější je, že tvoří elektrické rozhraní jak s CPU tak i s plošnými spoji na desce. Zásuvky CPU lze nejčastěji nalézt ve většině stolních a serverových počítačů. Typ zásuvky musí podporovat chipset a CPU.</p>
+  <img class="cpu-img" src="data:image/jpeg;base64,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" alt="">
+  </div>
+  <div class="div-footer">
+    <div class="div-footer-content1">
+        <span>Zdroje</span>
+        <ul>
+            <li>Pan Esch</li>
+            <li>Wikipedia</li>
+            <li>Alza</li>
+            <li>CZC</li>
+        </ul>
+    </div>
+    <div class="div-footer-content2">
+        <span>Podpořte nás</span>
+        <ul>
+            <li>Paypal</li>
+            <li>Komentář</li>
+            <li onclick="alert('Toto se stále připravuje')" style="cursor: pointer;">Hodnocení</li>
+        </ul>
+    </div>
+    <div class="div-footer-content3">
+        <span>Pomoc</span>
+        <ul>
+            <li>Email</li>
+            <li>Sms</li>
+            <li>Youtube komentáře</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

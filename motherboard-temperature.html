@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+      background-color: #f8f8f8;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    </style>
+</head>
+<body>
+    <header>
+
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Zařízení běžně integrovaná do základní desky</a></li>
+                <li><a href="form-factor.html">Velikost základní desky a její uspořádání</a></li>
+                <li><a href="motherboard-design.html">Design záklandí desky</a></li>
+                <li><a href="expanding-slots.html">Rozšiřující sloty základní desky</a></li>
+                <li><a href="motherboard-temperature.html">Teplota a spolehlivost</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 class="motherboard-headline">Teplota mateřské desky a její spolehlivost</h1>
+       <p> Základní desky jsou obvykle chlazené vzduchem pomocí chladičů, často namontovaných na větší čipy, jako je Northbridge, v moderních základních deskách. Nedostatečným nebo nesprávným chlazením (K nesprávnému chlazení může často dojít pokud je na základní desce naneseno velké množství prachu, které se tam dostane pomocí ventilace) může dojít k poškození vnitřních součástí počítače, nebo způsobit jeho pád. Pasivní chlazení nebo ventilátor, který je namontován na napájení je dostačující pro mnohé stolní počítače do roku 1990. Novější desky mají integrovaná teplotní čidla pro detekci teploty základní desky a CPU a také kontrolovatelné konektory ventilátoru, které BIOS nebo operační systém může používat pro regulaci otáček ventilátoru. Některé počítače (které mají velmi výkonné mikroprocesory, velké množství paměti RAM a vysoce výkonné grafické karty) používají systém chlazení vodou, na rozdíl od běžných uživatelů. Základní desky používají elektrolytické kondenzátory pro filtraci stejnosměrného proudu. Nedostatečné chlazení a zvýšení teploty zhoršuje funkčnost základní desky.</p>
+       <img class="motherboard-southbridge-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/K8t800pro.JPG/150px-K8t800pro.JPG" alt="">
+       <h1 class="motherboard-headline">Chlazení mateřské desky</h1>
+       <p>Chlazení počítače je činnost nutná k odvedení přebytečného tepla od součástek počítače, aby byla zajištěna jeho funkčnost v rámci technicky přípustné provozní teploty a zamezilo se poruchám z důvodu přehřátí počítače. Jednotlivé součástky jsou konstruovány tak, aby vytvářely co nejméně tepla například snižováním příkonu, přesto produkují tepla tolik, že je nutné odvést ho ven. K odvedení tepla slouží nejčastěji kovové chladiče (pasivní) měděné nebo ze slitiny hliníku kvůli pevnosti, lehkosti a hlavně ceně, na které se dají připevnit malé plastové ventilátory (aktivní). Dále je možné využít kapalinové chlazení (nejčastěji je jako médium odvádějící teplo využívaná destilovaná voda nebo voda upravená tak, aby nebyla elektricky vodivá) nebo v extrémních případech kapaliny pod bodem mrazu (tekutý dusík nebo oxid uhličitý). Výrobci chlazení do počítačů vyvíjí co nejlepší tvary chladičů, aby byl odvod tepla co nejefektivnější.
+
+        V dobách prvních elektronkových počítačů bylo nutné k účinnému chlazení vyměňovat značný objem vzduchu, k čemuž sloužily letecké vrtule; ve speciálních případech i zkapalněný dusík nebo oxid uhličitý. Dnešní sálové počítače se chladí klimatizací celé místnosti nebo jako běžné stolní PC mikropočítače, to znamená za použití kovové základny a ventilátoru.</p>
+        <img class="motherboard-cooler-img" src="https://th.bing.com/th?id=OSK.d9898c6f78e8f7c57d4cda3f411921aa&w=188&h=132&c=7&o=6&pid=SANGAM" alt="">
+    </div>
+    <div class="div-footer">
+      <div class="div-footer-content1">
+          <span>Zdroje</span>
+          <ul>
+              <li>Pan Esch</li>
+              <li>Wikipedia</li>
+              <li>Alza</li>
+              <li>CZC</li>
+          </ul>
+      </div>
+      <div class="div-footer-content2">
+          <span>Podpořte nás</span>
+          <ul>
+              <li>Paypal</li>
+              <li>Komentář</li>
+              <li onclick="alert('Toto se stále připravuje')" style="cursor: pointer;">Hodnocení</li>
+          </ul>
+      </div>
+      <div class="div-footer-content3">
+          <span>Pomoc</span>
+          <ul>
+              <li>Email</li>
+              <li>Sms</li>
+              <li>Youtube komentáře</li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>
